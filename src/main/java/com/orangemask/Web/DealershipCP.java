@@ -14,7 +14,7 @@ public class DealershipCP implements WebMvcConfigurer{
     @Bean
     public ViewResolver resolver(){
         InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-        resolver.setPrefix("/WEB-INF/vievs/");
+        resolver.setPrefix("/WEB-INF/views/");
         resolver.setSuffix(".jsp");
         return resolver;
     }
