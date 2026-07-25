@@ -2,7 +2,7 @@ package com.orangemask;
 
 import org.springframework.stereotype.Component;
 
-@Component("hyper-car")
+@Component("hyperCar")
 public class HyperCar implements Car{
     private String hyperCarName;
     private int price;

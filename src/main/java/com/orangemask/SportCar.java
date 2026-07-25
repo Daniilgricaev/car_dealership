@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Primary
-@Component("sport-car")
+@Component("sportCar")
 public class SportCar implements Car {
     private String sportCarName;
     private int price;
