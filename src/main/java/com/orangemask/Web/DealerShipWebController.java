@@ -10,12 +10,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-@RequestMapping("/dealership")
 public class DealerShipWebController {
     private final DealerShipService dealerShipService;
     @Autowired
     public DealerShipWebController(DealerShipService dealerShipService){
         this.dealerShipService = dealerShipService;
+    }
+
+    @RequestMapping("/")
+    public String redirectToHomePage(){
+        return "redirect:/catalog";
     }
 
     @RequestMapping(value = "/catalog", method = RequestMethod.GET)
