@@ -31,8 +31,7 @@ public class DealerShipWebController {
         Car car = dealerShipService.getCar(type);
         model.addAttribute("dealerShipName",dealerShipService.getDealerShipName());
         model.addAttribute("dealerShipAddress",dealerShipService.getDealerShipPlace());
-        model.addAttribute("car", car.getModelName());
-        model.addAttribute("Price", car.getPrice());
+        model.addAttribute("car", car);
         return "catalog-page";
     }
     @RequestMapping(value = "/inventory", method = RequestMethod.GET)
